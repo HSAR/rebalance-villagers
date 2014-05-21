@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.hotmail.wolfiemario.rebalancevillagers</groupId>
     <artifactId>RebalanceVillagers</artifactId>
-    <version>1.7.5</version>
+    <version>1.7.9</version>
     <name>RebalanceVillagers</name>
     <url>http://dev.bukkit.org/server-mods/rebalance-villagers/</url>
     <repositories>
@@ -57,26 +57,12 @@
                         <goals>
                               <goal>shade</goal>
                         </goals>
-                        <configuration>
-                              <artifactSet>
-                                <includes>
-                                    <include>org.mcstats.bukkit:metrics</include>
-                                </includes>
-                            </artifactSet>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
     <dependencies>
-        <dependency>
-            <groupId>org.avaje</groupId>
-            <artifactId>ebean</artifactId>
-            <version>2.7.3</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>com.nisovin.shopkeepers</groupId>
             <artifactId>ShopkeepersPlugin</artifactId>
@@ -85,13 +71,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>craftbukkit</artifactId>
-            <version>1.7.5-R0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mcstats.bukkit</groupId>
-            <artifactId>metrics</artifactId>
-            <version>R6</version>
-            <scope>compile</scope>
+            <version>1.7.9-R0.2-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
